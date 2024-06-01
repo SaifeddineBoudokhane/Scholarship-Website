@@ -1,0 +1,49 @@
+*{
+    direction: rtl;
+}
+img.info-image {
+    width: 60%;
+    margin-left: -10%;
+    margin-right: 0;
+}
+.dropdown-hover:hover .dropdown-content {
+    width: 180px;
+    border-radius: 0px 10px 0px 10px;
+    margin-right: 190px;
+}
+.button-design-2 {
+    width: 100%;
+}
+footer a.contact {
+    border-right: 0;
+    padding-right: 0;
+    padding-left: 10%;
+    border-left: 1px solid var(--color-white);
+}
+footer a.cookies {
+    border-left: 0;
+    padding-right: 10%;
+    padding-left: 0;
+    border-right: 1px solid var(--color-white);
+}
+div.info-text ul{
+    list-style-type: disc; 
+    margin-right: 20px; 
+    padding-right: 0;
+}
+div.description ul{
+    padding-right: 20px;
+}
+.documents ul{
+    padding-right: 20px;
+}
+legend{
+    margin-right: 15px;
+}
+p.student-info{
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+q{
+    font-size: 1.7em;
+}

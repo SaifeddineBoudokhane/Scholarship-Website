@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUS</title>
+    <link rel="icon" href="/Css/Images/Logo/TUS-LOGO.ico" type="image/x-icon">
+    <!--Styles par défaut -->
+    <link rel="stylesheet" href="/Css/Style/General/reset.css">
+    <link rel="stylesheet" href="/Css/Style/General/font.css">
+    <link rel="stylesheet" href="/Css/Style/General/basic.css">
+    <!-- Style de la page -->
+    <link rel="stylesheet" href="/Css/Style/Page/registration.css">
+    <link rel="stylesheet" href="/Css/Style/General/arabic.css">
+    <!-- JavaScript -->
+    <script src="/JavaScript/script.js" defer></script>
+    <!-- ChatBot -->
+    <script type='text/javascript'>
+        (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'THdMBZMdQQZLdA3nE_c', {});
+    </script>
+
+</head>
+<body>
+    <header>
+        <div id="navigation">
+            <div id="banner">
+                <div class="left">
+                    <a href="/Html/Arabic/indexar.html">
+                        <img src="/Css/Images/Logo/logo-red-background.png" alt="TUS logo, home page link">
+                    </a>
+                </div>
+                <div class="right">
+                    <p class="tus">Tunisia Universities <br>Scholarships</p>
+                    <div class="languages">
+                        <a href="/Html/English/register-master.html">English</a>
+                        <a href="/Html/French/register-master.html">Français</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="/Html/Arabic/indexar.html">الصفحة الرئيسية</a></li>
+                    <li><a href="/Html/Arabic/licence.html">الإجازة</a></li>
+                    <li><a href="/Html/Arabic/master.html">الماجستير</a></li>
+                    <li><a href="/Html/Arabic/doctorate.html">الدكتوراه</a></li>
+                    <li><a href="/Html/Arabic/documents.html">المستندات المطلوبة</a></li>
+                    <li class="dropdown-hover">
+                        <p class="register-links" id="current-page">التسجيل</p>
+                        <div class="dropdown-content">
+                            <a href="/Html/Arabic/register-license.html" class="bar-item button">نموذج الإجازة</a>
+                            <a href="/Html/Arabic/register-master.html" class="bar-item button">نموذج الماجستير</a>
+                            <a href="/Html/Arabic/register-doctorate.html" class="bar-item button">نموذج الدكتوراه</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="sections">
+            <div class="section section-countdown">
+                <h2>تنتهي التسجيلات في <span class="deadline">15 يوليو 2024 الساعة 00:00:00</span></h2>
+                <p class="bold"><span>الوقت المتبقي للتسجيل: </span><span id="countdown"></span></p>
+            </div>  
+            <div class="section section-white">
+                <h1 class="main-header">نموذج تقديم للماجستير</h1>
+            </div>
+            <div class="section section-blue">
+                <h2>التسجيل في Tunisia Universities Scholarships الماجستير</h2>
+                <br>
+                <div class="section section-white">
+                    <form>
+                        <fieldset>
+                            <legend>المعلومات الشخصية</legend>
+                            <p><label for="last-name">الاسم العائلي : </label><input type="text" id="last-name" name="last-name" required placeholder="الاسم العائلي الخاص بك"></p>
+                            <p><label for="first-name">الاسم الشخصي : </label><input type="text" id="first-name" name="first-name" required placeholder="الاسم الشخصي الخاص بك"></p>
+                            <p>
+                                <label for="sex">الجنس : </label>
+                                <select name="sex" id="sex" required>
+                                    <option value=""disabled hidden selected>اختر...</option>
+                                    <option value="homme">ذكر</option>
+                                    <option value="femme">أنثى</option>
+                                </select>
+                            </p>
+                            <p><label for="age">تاريخ الميلاد : </label><input type="date" id="age" name="age" max="2007-09-30" required></p>
+                            <p><label for="nationality">الجنسية : </label>
+                                <select name="nationality" id="nationality" required>
+                                    <option value=""disabled hidden selected>اختر...</option>
+                                    <option value="française">فرنسية</option>
+                                    <option value="marocaine">مغربية</option>
+                                    <option value="algérienne">جزائرية</option>
+                                    <option value="turque">تركية</option>
+                                    <option value="mauritanienne">موريتانية</option>
+                                    <option value="sénégalaise">سنغالية</option>
+                                    <option value="espagnole">إسبانية</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>بيانات الاتصال</legend>
+                            <p><label for="email">البريد الإلكتروني :</label><input type="email" id="email" name="email"required  placeholder="example@example.com"></p>
+                            <p><label for="phone">رقم الهاتف :</label><input type="tel" id="phone" name="phone"required></p>
+                            <p><label for="address">العنوان :</label><input type="text" id="address" name="address"required placeholder="عنوانك"></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>المسار الدراسي</legend>
+                            <p>
+                                <label for="highest-degree">أعلى شهادة حصلت عليها :</label>
+                                <select name="highest-degree" id="highest-degree" required>
+                                    <option value=""disabled hidden selected>اختر...</option>
+                                    <option value="licence">الالإجازة</option>
+                                    <option value="master">الماجستير</option>
+                                    <option value="doctorat">الدكتوراه</option>
+                                </select>
+                            </p>
+                            <p><label for="degree-grade">معدل الشهادة :</label><input type="number" id="degree-grade" name="degree-grade"required placeholder="معدل الشهادة الخاص بك" min="10" max="20" step=".01"></p>
+                            <p><label for="study-field">مجال الدراسة :</label><input type="text" id="study-field" name="study-field"required placeholder="مجال دراستك"></p>
+                            <p><label for="institution-name">اسم المؤسسة :</label><input type="text" id="institution-name" name="institution-name"required placeholder="اسم المؤسسة التي حصلت على شهادتك منها"></p>
+                            <p><label for="graduation-year">سنة الحصول على الشهادة :</label><input type="number" id="graduation-year" name="graduation-year" min="2020" max="2024" required placeholder="2024"></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>إتقان اللغات</legend>
+                            <p>
+                                <label for="proficiency-french">إتقان الفرنسية :</label>
+                                <select name="proficiency-french" id="proficiency-french" required>
+                                    <option value=""disabled hidden selected>اختر...</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="proficiency-arabic">إتقان العربية :</label>
+                                <select name="proficiency-arabic" id="proficiency-arabic" required>
+                                    <option value=""disabled hidden selected>اختر...</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>نوع المنحة</legend>
+                            <p>
+                                <label for="scholarship-degree">تفضيل مجال الدراسة :</label>
+                                <select name="scholarship-degree" id="scholarship-degree" required>
+                                    <option value=""disabled hidden selected>اختر...</option>
+                                    <optgroup label="الماجستير">
+                                        <option value="Réseaux Informatiques Avancés">-- Réseaux Informatiques Avancés --  ISSATSO --</option>
+                                        <option value="Génie des Énergies Renouvelables">-- Génie des Énergies Renouvelables --  ISSATSO --</option>
+                                        <option value="Science et Ingénierie des Matériaux">-- Science et Ingénierie des Matériaux --  ISSATSO --</option>
+                                        <option value="Science des Données">-- Science des Données --  INSAT --</option>
+                                        <option value="Sciences de l'Environnement et Développement Durable">-- Sciences de l'Environnement et Développement Durable --  INSAT --</option>
+                                        <option value="Biologie Moléculaire et Biotechnologie">-- Biologie Moléculaire et Biotechnologie --  INSAT --</option>
+                                        <option value="Ingénierie Financière">-- Ingénierie Financière --  IHEC Carthage --</option>
+                                        <option value="Management des Affaires Internationales">-- Management des Affaires Internationales --  IHEC Carthage --</option>
+                                        <option value="Entrepreneuriat et Innovation">-- Entrepreneuriat et Innovation --  IHEC Carthage --</option>
+                                        <option value="Stratégie Marketing et Innovation">-- Stratégie Marketing et Innovation --  TBS --</option>
+                                        <option value="Urbanisme et Aménagement Urbain">-- Urbanisme et Aménagement Urbain --  TBS --</option>
+                                        <option value="Arts Numériques et Multimédia">-- Arts Numériques et Multimédia --  TBS --</option>
+                                        <option value="Génie Biomédical">-- Génie Biomédical --  ESPRIT --</option>
+                                        <option value="Systèmes d'Information et Réseaux">-- Systèmes d'Information et Réseaux --  ESPRIT --</option>
+                                        <option value="Ingénierie Logicielle et Intelligence Artificielle">-- Ingénierie Logicielle et Intelligence Artificielle --  ESPRIT --</option>
+                                        <option value="Science Politique et Relations Internationales">-- Science Politique et Relations Internationales --  UTM --</option>
+                                        <option value="Littérature Comparée et Linguistique">-- Littérature Comparée et Linguistique --  UTM --</option>
+                                        <option value="Chimie (Avancée)">-- Chimie (Avancée) --  UTM --</option>
+                                        <option value="Recherche Clinique et Pharmacologie">-- Recherche Clinique et Pharmacologie --  UOS --</option>
+                                        <option value="Économie du Développement Durable">-- Économie du Développement Durable --  UOS --</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>معلومات إضافية :</legend>
+                            <p><label for="extracurricular-activities">الأنشطة اللاصفية :</label><textarea name="extracurricular-activities" id="extracurricular-activities" cols="70" rows="5" placeholder="قائمة بأي نشاط لاصفي أو دور قيادي"></textarea></p>
+                            <p><label for="extracurricular-activities">تجربة البحث :</label><textarea name="extracurricular-activities" id="extracurricular-activities" cols="70" rows="5" placeholder="صف بإيجاز أي تجربة بحثية أو مشاريع"></textarea></p>
+                        </fieldset>
+                        <fieldset>
+        
+                            <legend>تحميل المستندات : </legend>
+        
+                            <p><label for="personal-picture">الصورة الشخصية (JPG) : </label><input type="file" name="personal-picture" id="personal-picture" accept="image/jpeg" required></p>
+                            
+                            <p><label for="official-transcript">السجلات الرسمية (PDF) :</label><input type="file" name="official-transcript" id="official-transcript" accept=".pdf" required></p>
+        
+                            <p><label for="language-certificate">شهادة اللغة (إذا كانت متوفرة) (PDF) :</label><input type="file" name="language-certificate" id="language-certificate" accept=".pdf" multiple></p>
+        
+                            <p><label for="research-proposal">مقترح البحث (PDF) :</label><input type="file" name="research-proposal" id="research-proposal" accept=".pdf"></p>
+                            
+                            <p><label for="curriculum-vitae">السيرة الذاتية (CV) (PDF) :</label><input type="file" name="curriculum-vitae" id="curriculum-vitae" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="letters-of-recommendation">رسائل التوصية (PDF) :</label><input type="file" name="letters-of-recommendation" id="letters-of-recommendation" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="financial-documents">المستندات المالية (PDF) :</label><input type="file" name="financial-documents" id="financial-documents" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="passport">جواز السفر (صورة) (PDF) :</label><input type="file" name="passport" id="passport" accept=".pdf" required></p>
+                            
+                            <p><label for="medical-certificate">الشهادة الطبية (PDF) :</label><input type="file" name="medical-certificate" id="medical-certificate" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="visa-documents">وثائق التأشيرة (PDF) :</label><input type="file" name="visa-documents" id="visa-documents" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="additional-documents">جميع المستندات الإضافية (PDF) :</label><input type="file" name="additional-documents" id="additional-documents" accept=".pdf" multiple></p>
+                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>البيان</legend>
+                            <p class="bold">بإرسال هذا النموذج، أؤكد أن جميع المعلومات المقدمة صحيحة وكاملة. أنا أدرك أن أية معلومات زائفة قد تؤدي إلى إلغاء التأهل. كما أوافق على أن قرار لجنة المنح هو نهائي.</p>
+                            <p id="accept-declaration"><input type="checkbox" name="accept-declaration" id="accept-declaration"required><label for="accept-declaration">قبول البيان</label></p>
+                        </fieldset>
+                            <input id="submit" type="submit" value="التسجيل">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="socials">
+            <img src="/Css/Images/Icons/icons8-instagram.svg" alt="">
+            <img src="/Css/Images/Icons/icons8-facebook.svg" alt="">
+            <img src="/Css/Images/Icons/icons8-youtube.svg" alt="">
+            <img src="/Css/Images/Icons/icons8-linkedin.svg" alt="">
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>حقوق النشر © 2024 - Tunisia Universities Scholarships</p>
+            <p>تطوير بواسطة © سيف الدين بودوخان</p>
+            <div>
+                <a href="/Html/Arabic/contact.html" class="contact">اتصل</a>
+                <a href="/Html/Arabic/cookies.html" class="cookies">الكوكيز</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

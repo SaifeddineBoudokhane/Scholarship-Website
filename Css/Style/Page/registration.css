@@ -1,0 +1,107 @@
+
+/* Registration */
+#registration{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--color-dark-blue);
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+fieldset{
+    border: 1px solid var(--color-blue);
+    padding: 10px;
+    margin: 20px;
+}
+legend{
+    margin-left: 15px;
+    color: var(--color-blue);
+}
+label{
+    text-wrap: nowrap;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+option,input{
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+
+}
+input,select{
+    width: 50%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 0;
+}
+select{
+    width: fit-content;
+}
+input:valid,select:valid{
+    outline: 2px solid var(--color-green);
+}
+input:not(input:required),select:not(select:required){
+    outline: 0;
+}
+input:invalid,select:invalid{
+    outline: 2px solid var(--color-red);
+}
+input:focus,select:focus,textarea:focus{
+    outline: 2px solid var(--color-blue);
+}
+textarea {
+    resize: none;
+    width: 100%;
+}
+select:invalid{
+    outline: 2px solid var(--color-red);
+}
+form p{
+    width: 100%;
+    margin-bottom: 10px;
+}
+form p *{
+    display: block;
+}
+#accept-declaration{
+    outline: 0;
+}
+#accept-declaration *{
+    display: inline;
+    width: fit-content;
+}
+#submit{
+    padding: 5px 10px;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: inherit;
+    color: var(--color-white);
+    align-self: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--color-green);
+    outline: 3px var(--color-green) solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 2%;
+}
+#submit:hover {
+    background-color: transparent;
+    color: var(--color-green);
+}
+#thanks{
+    width: 90%;
+}

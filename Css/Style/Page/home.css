@@ -1,0 +1,81 @@
+div.quote{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    margin-bottom: 5%;
+    padding: 0 8% 0 8%;
+}
+img.quote-image{
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+}
+p.student-info{
+    font-size: 1.7em;
+    margin-bottom: 5%;
+}
+q{
+    font-size: 1.4em;
+}
+
+.cookie-popup {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-width: 400px;
+    width: 90%;
+}
+dialog::backdrop {
+    background-color: hsla(0, 0%, 100%, 0.5);
+}
+.cookie-popup .cookie-content {
+    text-align: center;
+}
+
+.cookie-popup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cookie-popup p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cookie-popup .cookie-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-popup button.cookie-button {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button#accept-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#reject-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cookie-popup button:hover {
+    opacity: 0.9;
+}

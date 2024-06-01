@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUS</title>
+    <link rel="icon" href="/Css/Images/Logo/TUS-LOGO.ico" type="image/x-icon">
+    <!--Default Styles -->
+    <link rel="stylesheet" href="/Css/Style/General/reset.css">
+    <link rel="stylesheet" href="/Css/Style/General/font.css">
+    <link rel="stylesheet" href="/Css/Style/General/basic.css">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="/Css/Style/Page/registration.css">
+    <!-- JavaScript -->
+    <script src="/JavaScript/script.js" defer></script>
+    <!-- ChatBot -->
+    <script type='text/javascript'>
+        (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'THdMBZMdQQZLdA3nE_c', {});
+    </script>
+
+</head>
+<body>
+    <header>
+        <div id="navigation">
+            <div id="banner">
+                <div class="left">
+                    <a href="/Html/English/index.html">
+                        <img src="/Css/Images/Logo/logo-red-background.png" alt="TUS logo, home page link">
+                    </a>
+                </div>
+                <div class="right">
+                    <p class="tus">Tunisia Universities<br>Scholarships</p>
+                    <div class="languages">
+                        <a href="/Html/French/register-doctorate.html">Français</a>
+                        <a href="/Html/Arabic/register-doctorate.html">عربي</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="/Html/English/index.html">Home</a></li>
+                    <li><a href="/Html/English/licence.html">Bachelor's degree</a></li>
+                    <li><a href="/Html/English/master.html">Master's degree</a></li>
+                    <li><a href="/Html/English/doctorate.html">Doctorate</a></li>
+                    <li><a href="/Html/English/documents.html">Necessary Documents</a></li>
+                    <li class="dropdown-hover">
+                        <p class="register-links" id="current-page">Register</p>
+                        <div class="dropdown-content">
+                            <a href="/Html/English/register-license.html" class="bar-item button">Bachelor's Form</a>
+                            <a href="/Html/English/register-master.html" class="bar-item button">Master's Form</a>
+                            <a href="/Html/English/register-doctorate.html" class="bar-item button">Doctorate's Form</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="sections">
+            <div class="section section-countdown">
+                <h2>Registrations close on <span class="deadline">July 15, 2024 00:00:00</span></h2>
+                <p class="bold"><span>Time left to register : </span><span id="countdown"></span></p>
+            </div>
+            <div class="section section-white">
+                <h1 class="main-header">Doctorate Application Form</h1>
+            </div>
+            <div class="section section-blue">
+                <h2>Registration for the Tunisia Universities Scholarships for a Bachelor's Degree</h2>
+                <br>
+                <div class="section section-white">
+                    <form>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <p><label for="last-name">Last Name : </label><input type="text" id="last-name" name="last-name" required placeholder="Your Last Name"></p>
+                            <p><label for="first-name">First Name : </label><input type="text" id="first-name" name="first-name" required placeholder="Your First Name"></p>
+                            <p>
+                                <label for="sex">Sex : </label>
+                                <select name="sex" id="sex" required>
+                                    <option value=""disabled hidden selected>choice...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </p>
+                            <p><label for="age">Date of Birth: </label><input type="date" id="age" name="age"  max="2007-09-30" required></p>
+                            <p><label for="nationality">Nationality : </label>
+                                <select name="nationality" id="nationality" required>
+                                    <option value=""disabled hidden selected>choice...</option>
+                                    <option value="french">French</option>
+                                    <option value="moroccan">Moroccan</option>
+                                    <option value="algerian">Algerian</option>
+                                    <option value="turkish">Turkish</option>
+                                    <option value="mauritanian">Mauritanian</option>
+                                    <option value="senegalese">Senegalese</option>
+                                    <option value="spanish">Spanish</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <p><label for="email">Email Address :</label><input type="email" id="email" name="email"required  placeholder="example@example"></p>
+                            <p><label for="phone">Phone Number :</label><input type="tel" id="phone" name="phone"required></p>
+                            <p><label for="address">Address :</label><input type="text" id="address" name="address"required placeholder="Your Address"></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Educational Background</legend>
+                            <p>
+                                <label for="highest-degree">Highest Attained Qualification :</label>
+                                <select name="highest-degree" id="highest-degree" required>
+                                    <option value=""disabled hidden selected>choice...</option>
+                                    <option value="master">Master's</option>
+                                    <option value="doctorate">Doctorate</option>
+                                </select>
+                            </p>
+                            <p><label for="degree-grade">Degree's Grade :</label><input type="number" id="degree-grade" name="degree-grade"required placeholder="Your Degree's Grade" min="10" max="20" step=".01"></p>
+                            <p><label for="study-field">Field of Study :</label><input type="text" id="study-field" name="study-field"required placeholder="Your Degree's Field of Study"></p>
+                            <p><label for="institution-name">Name of Institution :</label><input type="text" id="institution-name" name="institution-name"required placeholder="Name of Your Degree's Institution"></p>
+                            <p><label for="graduation-year">Graduation Year :</label><input type="number" id="graduation-year" name="graduation-year" min="2020" max="2024" required placeholder="2024"></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Language Proficiency</legend>
+                            <p>
+                                <label for="proficiency-french">Proficiency in French :</label>
+                                <select name="proficiency-french" id="proficiency-french" required>
+                                    <option value=""disabled hidden selected>choice...</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="proficiency-arabic">Proficiency in Arabic</label>
+                                <select name="proficiency-arabic" id="proficiency-arabic" required>
+                                    <option value=""disabled hidden selected>choice...</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Scholarship Type</legend>
+                            <p>
+                                <label for="scholarship-degree">Field of Study Preference :<label>
+                                <select name="scholarship-degree" id="scholarship-degree" required>
+                                    <option value=""disabled hidden selected>choice...</option>
+                                    <optgroup label="Doctorate">
+                                        <option value="Doctorate in Materials Science and Engineering">-- Doctorate in Materials Science and Engineering --  ISSATSO --</option>
+                                        <option value="Doctorate in Robotics and Artificial Intelligence">-- Doctorate in Robotics and Artificial Intelligence --  ISSATSO --</option>
+                                        <option value="Doctorate in Sustainable Energy">-- Doctorate in Sustainable Energy --  ISSATSO --</option>
+                                        <option value="Ph.D. in Biomedical Research">-- Ph.D. in Biomedical Research --  INSAT --</option>
+                                        <option value="Doctorate in Astrophysics">-- Doctorate in Astrophysics --  INSAT --</option>
+                                        <option value="Doctorate in Environmental Sciences">-- Doctorate in Environmental Sciences --  INSAT --</option>
+                                        <option value="Ph.D. in Strategic Management">-- Ph.D. in Strategic Management --  IHEC Carthage --</option>
+                                        <option value="Doctorate in Economic Policy">-- Doctorate in Economic Policy --  IHEC Carthage --</option>
+                                        <option value="Doctorate in Financial Economics">-- Doctorate in Financial Economics --  IHEC Carthage --</option>
+                                        <option value="Doctorate in International Business">-- Doctorate in International Business --  TBS --</option>
+                                        <option value="Ph.D. in Entrepreneurship">-- Ph.D. in Entrepreneurship --  TBS --</option>
+                                        <option value="Doctorate in Management and Leadership">-- Doctorate in Management and Leadership --  TBS --</option>
+                                        <option value="Ph.D. in Advanced Materials Engineering">-- Ph.D. in Advanced Materials Engineering --  ESPRIT --</option>
+                                        <option value="Doctorate in Robotics and Autonomous Systems">-- Doctorate in Robotics and Autonomous Systems --  ESPRIT --</option>
+                                        <option value="Doctorate in Mobile and Ubiquitous Computing*">-- Doctorate in Mobile and Ubiquitous Computing* --  ESPRIT --</option>
+                                        <option value="Ph.D. in Political Philosophy">-- Ph.D. in Political Philosophy --  UTM --</option>
+                                        <option value="Doctorate in Sociology of Globalization">-- Doctorate in Sociology of Globalization --  UTM --</option>
+                                        <option value="Doctorate in International Relations">-- Doctorate in International Relations --  UTM --</option>
+                                        <option value="Ph.D. in Medical Research">-- Ph.D. in Medical Research --  UOS --</option>
+                                        <option value="Doctorate in Public Health">-- Doctorate in Public Health --  UOS --</option>
+                                        <option value="Doctorate in Pharmaceutical Sciences">-- Doctorate in Pharmaceutical Sciences --  UOS --</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Additional Information :</legend>
+                            <p><label for="extracurricular-activities">Extracurricular Activities :</label><textarea name="extracurricular-activities" id="extracurricular-activities" cols="70" rows="5" placeholder="List any extracurricular activities or leadership roles"></textarea></p>
+                            <p><label for="extracurricular-activities">Research Experience :</label><textarea name="extracurricular-activities" id="extracurricular-activities" cols="70" rows="5" placeholder="Briefly describe any research experience or projects"></textarea></p>
+                        </fieldset>
+                        <fieldset>
+        
+                            <legend>Upload Documents: </legend>
+        
+                            <p><label for="personal-picture">Personal Image (JPG) : </label><input type="file" name="personal-picture" id="personal-picture" accept="image/jpeg" required></p>
+                            
+                            <p><label for="official-transcript">Official Transcripts (PDF) :</label><input type="file" name="official-transcript" id="official-transcript" accept=".pdf" required></p>
+        
+                            <p><label for="language-certificate">Language Proficiency Certificate (if applicable) (PDF) :</label><input type="file" name="language-certificate" id="language-certificate" accept=".pdf" multiple></p>
+        
+                            <p><label for="research-proposal">Research Proposal (PDF) :</label><input type="file" name="research-proposal" id="research-proposal" accept=".pdf"></p>
+                            
+                            <p><label for="curriculum-vitae">Curriculum Vitae (CV) (PDF) :</label><input type="file" name="curriculum-vitae" id="curriculum-vitae" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="letters-of-recommendation">Letters of Recommendation (PDF) :</label><input type="file" name="letters-of-recommendation" id="letters-of-recommendation" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="financial-documents">Financial Documents (PDF) :</label><input type="file" name="financial-documents" id="financial-documents" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="passport">Passport (Picture) (PDF) :</label><input type="file" name="passport" id="passport" accept=".pdf" required></p>
+                            
+                            <p><label for="medical-certificate">Medical Certificate (PDF) :</label><input type="file" name="medical-certificate" id="medical-certificate" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="visa-documents">Visa Documents (PDF) :</label><input type="file" name="visa-documents" id="visa-documents" accept=".pdf" multiple required></p>
+                            
+                            <p><label for="additional-documents">Any Additional Supporting Documents (PDF) :</label><input type="file" name="additional-documents" id="additional-documents" accept=".pdf" multiple></p>
+                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>Declaration</legend>
+                            <p class="bold">By submitting this application form, I confirm that all the information provided is accurate and complete. I understand that any false information may result in disqualification. I also acknowledge that the decision of the scholarship committee is final.</p>
+                            <p id="accept-declaration"><input type="checkbox" name="accept-declaration" id="accept-declaration"required><label for="accept-declaration">Accept the declaration</label></p>
+                        </fieldset>
+                            <input id="submit" type="submit" value="Register">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="socials">
+            <img src="/Css/Images/Icons/icons8-instagram.svg" alt="">
+            <img src="/Css/Images/Icons/icons8-facebook.svg" alt="">
+            <img src="/Css/Images/Icons/icons8-youtube.svg" alt="">
+            <img src="/Css/Images/Icons/icons8-linkedin.svg" alt="">
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright © 2024 -Tunisia Universities Scholarships</p>
+            <p>Developed by © Saifeddine Boudokhane</p>
+            <div>
+                <a href="/Html/English/contact.html" class="contact">Contact</a>
+                <a href="/Html/English/cookies.html" class="cookies">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
